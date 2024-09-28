@@ -1,3 +1,5 @@
 yfinance
 matplotlib
 pandas
+scikit-learn
+numpy
