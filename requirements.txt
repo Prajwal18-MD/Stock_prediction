@@ -3,3 +3,6 @@ matplotlib
 pandas
 scikit-learn
 numpy
+keras
+tensorflow
+setuptools
