@@ -660,7 +660,7 @@ st.set_page_config(
 def add_header():
     st.markdown("""
     <div style="display: flex; align-items: center;">
-        <img src="https://i.imgur.com/6RMhx.gif" alt="Logo" style="width:60px;height:60px;">
+        <img src="https://tenor.com/view/rocket-joypixels-flying-up-missile-skyrocket-gif-17554248" alt="Logo" style="width:60px;height:60px;">
         <h1 style="margin-left: 20px;">📈 Ultimate Stock Price Prediction App</h1>
     </div>
     """, unsafe_allow_html=True)
@@ -674,10 +674,10 @@ def user_input_features():
     """
     Collect user input for stock ticker, model selection, and future date.
     """
-    ticker = st.sidebar.text_input("💼 Stock Ticker (e.g., GOOG, AAPL)", "").upper().strip()
+    ticker = st.sidebar.text_input("💼 Enter Stock Ticker", "").upper().strip()
     if ticker:
         model_type = st.sidebar.selectbox("🧠 Select Prediction Model", ["LSTM", "GRU", "CNN"])
-        future_date = st.sidebar.date_input("📅 Future Date", datetime.now() + timedelta(days=30))
+        future_date = st.sidebar.date_input("📅 Select Future Date", datetime.now() + timedelta(days=30))
         return ticker, model_type, future_date
     else:
         st.sidebar.info("🔔 Please enter a stock ticker to proceed.")
